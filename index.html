@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Malex</title>
+        <meta name="description" content="Website project">
+        <script src="https://kit.fontawesome.com/3ed6ace440.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="center-container flex-container">
+            <div class="logo"><a href="index.html"><img src="img/logo_malex.png" alt="Malex logo"></a></div>
+    
+            <nav class="desktop-nav">
+                <ul class="flex-container">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+    
+            <button id="search-button" class="search-button img-button" onclick="toggleSearch()"><i id="search-button-icon" class="fas fa-search"></i></button>
+            <button id="hamburger" class="img-button" href="javascript:void(0);" onclick="toggleMenu()">
+                <i id="hamburger-icon" class="fa fa-bars"></i>
+            </button>
+    
+            <section id="header-overlay">
+                <nav id="mobile-menu">
+                    <section class="flex-container">
+                        <address>
+                            <p>575 Crescent Avenue<br>PA 18951<br>United Kingdom</p>
+                            <p><a href="tel:+43253312523">+432 533 12 523</a><br><a href="mailto:info@domain.com">info@domain.com</a></p>
+                        </address>
+                        <ul> 
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </section>
+                    <div class="overlay-footer flex-container">
+                        <p>© <?= date('Y'); ?> Business Consulting Agency Figma Template By Adveits</p>
+                        <div>
+                            <button class="language-switch img-button">ru</button>
+                            <button class="language-switch img-button">en</button>
+                        </div>
+                    </div>
+                </nav>
+                <section id="search-overlay">
+                    <div class="center-container flex-container">
+                        <input type="text" placeholder="Search">
+                        <button class="img-button"><i class="fas fa-search"></i></button>
+                    </div>
+    
+                    <div class="overlay-footer flex-container">
+                        <p>© <?= date('Y'); ?> Business Consulting Agency Figma Template By Adveits</p>
+                        <div>
+                            <button class="language-switch img-button">ru</button>
+                            <button class="language-switch img-button">en</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <img class="banner-bg1" src="img/bg_banner_1.jpg" alt="Banner background">
+        <img class="banner-bg2" src="img/bg_banner_2.jpg" alt="Banner background">
+        <div class="center-container">
+            <div class="intro">
+                <h1>Business <br>Consulting Agency</h1>
+                <p>We are a digital business consulting agency that helps companies increase better incomes and help with branding for faster business growing.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+        <div class="center-container flex-container banner-buttons">
+            <a href="#plans" class="scroll-down img-button">↓</a>
+            <button class="language-switch img-button">en</button>
+        </div>
+    </main>
+
+    <section class="section-gray">
+        <section class="services center-container flex-container">
+            <div class="service">
+                <div><i class="fas fa-chess-knight"></i></div>
+                <h4>Strategic Planning</h4>
+                <p>Strategic planning is the process of documenting and establishing a direction of your business</p>
+                <div class="flex-container read-more">
+                    <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a><b>Read more</b>
+                </div>
+            </div>
+            <div class="service">
+                <div><i class="fas fa-user-tie"></i></div>
+                <h4>Consulting & Marketing</h4>
+                <p>A marketing consultant is an advisor who works with companies to create and implement marketing strategies.</p>
+                <div class="flex-container read-more">
+                    <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a><b>Read more</b>
+                </div>
+            </div>
+            <div class="service">
+                <div><i class="fas fa-chart-pie"></i></div>
+                <h4>Financial</h4>
+                <p>Financial services is a broad range of more specific activities such as banking, investing, and insurance.</p>
+                <div class="flex-container read-more">
+                    <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a><b>Read more</b>
+                </div>
+            </div>
+        </section>
+    
+        <section class="about-us center-container">
+            <b class=section-title>About us</b>
+            <div class="flex-container">
+                <div>
+                    <h2>Keep Your Business Safe & Ensure High Availability</h2>
+                    <div class="flex-container signature">
+                        <div><img src="img/signature.png" alt="CEO's signature"></div>
+                        <div>
+                            <h5>Tom Henders</h5>
+                            <p>CEO of Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>A business consulting agency is involved in the planning, implementation, and education of businesses. We work directly with business owners on developing a business plan, identifying marketing needs and developing the necessary skills for business ownership.</p>
+                    <p>Marketing consultant is an advisor who works with companies to create and implement marketing strategies.</p>
+                </div>
+            </div>
+        </section>
+            
+        <section class="features center-container flex-container">
+            <div><i class="fas fa-check"></i><h6>Constant Improvement</h6></div>
+            <div><i class="fas fa-check"></i><h6>Commitment to Customers</h6></div>
+            <div><i class="fas fa-check"></i><h6>Best Quality You Can Get</h6></div>
+            <div><i class="fas fa-check"></i><h6>30 Days Money Back Warranty</h6></div>
+        </section>
+
+    
+        <div class="about-us-photo center-container"><img src="img/bg_businesspeople.jpg" alt="Business people"></div>
+    </section>
+
+    <section class="section-white">
+        <section class="how-it-works center-container flex-container">
+            <div>
+                <div>
+                    <b>How it works?</b>
+                    <h2>We Guarantee a Stable Work Process</h2>
+                </div>
+            </div>
+            <div class="step">
+                <b class="bg-text">01</b>
+                <div>
+                    <h4>Business Analysis</h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                </div>
+            </div>
+            <div class="step">
+                <b class="bg-text">02</b>
+                <div>
+                    <h4>Business Planning</h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                </div>
+            </div>
+            <div class="step">
+                <b class="bg-text">03</b>
+                <div>
+                    <h4>Business Growth</h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="meet-our-team center-container">
+            <b class="bg-text">Team</b>
+            <b class="section-title">Meet our team</b>
+            <h2>We are Business Consulting Professionals</h2>
+            <section class="flex-container">
+                <div class="team-card">
+                    <div>
+                        <img src="img/tom_henders.jpg" alt="Tom Hender's photo">
+                        <b>CEO</b>
+                    </div>
+                    <h4>Tom Henders</h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="team-card">
+                    <div>
+                        <img src="img/andrew_mike.jpg" alt="Andrew Mike's photo">
+                        <b>Business Analytic</b>
+                    </div>
+                    <h4>Andrew Mike</h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="team-card">
+                    <div>
+                        <img src="img/rosie_ford.jpg" alt="Rosie Ford's photo">
+                        <b>Marketing Agent</b>
+                    </div>
+                    <h4>Rosie Ford</h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <section id="plans" class="section-gray">
+        <section class="price-plans center-container">
+            <b class="bg-text">Plans</b>
+            <b class="section-title">Price plans</b>
+            <h2>Choose the Best Plan for You</h2>
+            <section class="flex-container">
+                <div class="card-plan">
+                    <h4>Basic Plan</h4>
+                    <p>This is a Basic Plan</p>
+                    <div class="price"><b><sup>$</sup>79</b>/monthly</div>
+                    <ul>
+                        <li>Branding<i class="fas fa-check"></i></li>
+                        <li>20 hours of consultation<i class="fas fa-check"></i></li>
+                        <li>15 hours of theory<i class="fas fa-check"></i></li>
+                        <li>Skype video call<i class="fas fa-check"></i></li>
+                        <li>Support 24/7<i class="fas fa-check"></i></li>
+                    </ul>
+                    <a href="#">Choose Plan</a>
+                </div>
+                <div class="card-plan">
+                    <h4>Standard Plan</h4>
+                    <p>This is a Standard Plan</p>
+                    <div class="price"><b><sup>$</sup>129</b>/monthly</div>
+                    <ul>
+                        <li>Branding<i class="fas fa-check"></i></li>
+                        <li>20 hours of consultation<i class="fas fa-check"></i></li>
+                        <li>15 hours of theory<i class="fas fa-check"></i></li>
+                        <li>Skype video call<i class="fas fa-check"></i></li>
+                        <li>Support 24/7<i class="fas fa-check"></i></li>
+                    </ul>
+                    <a href="#">Choose Plan</a>
+                </div>
+                <div class="card-plan">
+                    <b class="diagonal-tag">Popular</b>
+                    <h4>Standard Plan</h4>
+                    <p>This is a Standard Plan</p>
+                    <div class="price"><b><sup>$</sup>256</b>/monthly</div>
+                    <ul>
+                        <li>Branding<i class="fas fa-check"></i></li>
+                        <li>20 hours of consultation<i class="fas fa-check"></i></li>
+                        <li>15 hours of theory<i class="fas fa-check"></i></li>
+                        <li>Skype video call<i class="fas fa-check"></i></li>
+                        <li>Support 24/7<i class="fas fa-check"></i></li>
+                    </ul>
+                    <a href="#">Choose Plan</a>
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+    <section>
+        <section class="clients flex-container center-container">
+            <div><img src="img/logo_balkan.png" alt="Balkan logo"></div>
+            <div><img src="img/logo_adveits.png" alt="Adveits logo"></div>
+            <div><img src="img/logo_swiger.png" alt="Swiger logo"></div>
+            <div><img src="img/logo_mandala.png" alt="The Mandala Community logo"></div>
+            <div><img src="img/logo_balkan.png" alt="Balkan logo"></div>
+            <div><img src="img/logo_adveits.png" alt="Adveits logo"></div>
+        </section>
+
+        <div class="video center-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SDno1HI0pAE?playlist=SDno1HI0pAE&loop=1&mute=1"></iframe>
+        </div>
+    </section>
+
+    <section class="section-black">
+        <section class="testimonials center-container">
+            <b class="section-title">Testimonials</b>
+            <h2>Our Happy Customer Reviews</h2>
+            <div class="quote">
+                <i class="bg-text fas fa-quote-left"></i>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account.</p>
+            </div>
+            <div class="customers flex-container">
+                <img src="img/customer1.jpg" alt="Customer #1">
+                <img src="img/customer2.jpg" alt="Customer #2">
+                <img src="img/customer3.jpg" alt="Customer #3">
+                <div class="selected-customer">
+                    <b>Rosie Ford</b>
+                    <p>CEO at Company</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="section-gray">
+        <section class="new-articles center-container">
+            <b class="bg-text">News</b>
+            <b class="section-title">New articles</b>
+            <h2>Check Our Latest Blog Posts</h2>
+            <section class="articles flex-container">
+                <div>
+                    <img src="img/article_1.jpg" alt="Article #1">
+                    <h5>5 Amazing and Easy Tips for Sustainable Business Success</h5>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducims…</p>
+                    <div class="flex-container read-more">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a><b>Read more</b>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/article_2.jpg" alt="Article #2">
+                    <h5>Assessing the Maturity of Your Data Management in Industry</h5>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducims…</p>
+                    <div class="flex-container read-more">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a><b>Read more</b>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/article_3.jpg" alt="Article #3">
+                    <h5>How to Build Your Sustainable Business Strategy</h5>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducims…</p>
+                    <div class="flex-container read-more">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a><b>Read more</b>
+                    </div>
+                </div>
+            </section>
+            <div class="flex-container"><a href="#">View All Posts</a></div>
+        </section>
+    </section>
+
+    <section class="section-white">
+        <section class="contacts center-container">
+            <b class="bg-text">Contacts</b>
+            <b class="section-title">Contacts</b>
+            <h2>Any Questions? Contact us Freely and We'll Get Back to You Shortly</h2>
+            <address class="flex-container">
+                <div>
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Location</h4>
+                    <p>Location: 575 Crescent Avenue<br>
+                        Quakertown, PA 18951</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Phone no.</h4>
+                    <p>Mobile: <a href="tel:+43253312523">+432 533 12 523</a><br>
+                        Fax: <a href="fax:+53222212523">+532 222 12 523</a></p>
+                </div>
+                <div>
+                    <i class="far fa-paper-plane"></i>
+                    <h4>E-mail</h4>
+                    <p>Info: <a href="mailto:info@domain.com">info@domain.com</a><br>
+                        CEO: <a href="mailto:ceo@domain.com">ceo@domain.com</a></p>
+                </div>
+            </address>
+        </section>
+
+
+        <section class="form">
+            <form action="index.html" method="post">
+                <h3>You Can Write Us</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>When an unknown printer took a galley.</p>
+    
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <textarea placeholder="Message" rows="7" name="message" required></textarea>
+                <button type="submit" name="submit">Send message</button>
+            </form>
+        </section>
+    </section>
+
+    <button onclick="scrollToTop()" id="scroll-up"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="center-container flex-container">
+            <div class="footer-logo"><a href="index.html"><img src="img/logo_malex.png" alt="Malex logo"></a></div>
+            <div><p>© 2021 Business Consulting Agency Figma Template By Adveits</p></div>
+            <nav>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts/js_script.js"></script>
+</body>
+</html>
